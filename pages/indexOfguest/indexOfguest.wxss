@@ -1,0 +1,130 @@
+page {
+  height: 100%;
+  display: flex;
+}
+
+map {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.iconBox {
+  width: 100rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.infobar {
+  background-color: white;
+  border-radius: 100rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 50rpx auto;
+  font-size: 11pt;
+  color: rgb(92, 91, 91);
+}
+
+.user {
+  width: 50rpx;
+  height: 50rpx;
+}
+.functionBar{
+  background-color: white;
+  display:flex;
+  justify-content: space-between;
+  height: 50rpx;
+  font-size:large;
+  font-weight: 500;
+align-items: center;
+  width: 90%;
+/* margin-top: 30rpx; */
+}
+.headTab {
+  display: flex;
+  justify-content: space-between;
+  margin: 50rpx 70rpx 10rpx 70rpx;
+}
+.functionWindow{
+  padding: 30rpx 10rpx;
+  position: absolute;
+  background-color: white;
+  margin: 0 25rpx;
+  border-radius: 100rpx;
+  display: flex; 
+  flex-direction: column;
+  /* align-items: center; */
+  bottom: 150rpx;
+  width: 90%;
+  align-items: center;
+}
+.inputInfo cover-view{
+  margin: 20rpx 30rpx;
+  background-color: rgb(218, 214, 214);
+  border-radius: 100rpx;
+  /* width: 100%; */
+}
+.inputInfo{
+  width: 100%;
+}
+.inputInfo input,.inputInfo view{
+  padding: 0 20rpx;
+  /* text-align: center; */
+  height: 100rpx;
+  font-size: large;
+  /* width: 100%; */
+}
+.btnclass{
+  width: 100%;
+  position: absolute;
+  bottom: 40rpx;
+}
+.btnclass button{
+  width: 20%;font-size: 11pt; color: white;background-color: red;
+}
+.checkPage{
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  margin: 0 54rpx;
+  width: 650rpx;
+  height: 650rpx;
+  z-index: 10;
+  border-radius: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.searching{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkPage image{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 50rpx;
+}
+.InfoOfDriver{
+color: black;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 20rpx 0;
+}
+.sliderClass{
+  background-color: white;
+  width: 80%;
+  border-radius: 100rpx;
+  padding: 0 10rpx;
+  margin: 0 68rpx;
+  position: absolute;
+  bottom: 40rpx;
+}
