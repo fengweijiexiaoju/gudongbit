@@ -1,0 +1,30 @@
+<view class="Info">
+<view>当你受欺负时</view>
+你经常选择的发泄方式
+</view>
+
+<swiper class="SelectBite" current="0" bindchange="changeRole">
+<swiper-item class="item">
+<image src="../../images/背景4.png" class="backgd"></image>
+<view class="font">
+<view>委屈隐忍</view>
+<view>可选择叫打手,顺手打</view> 
+</view>
+<image class="icon" src="../../images/委屈 (白).png"></image>
+</swiper-item>
+
+<swiper-item class="item">
+<image src="../../images/背景4.png" class="backgd"></image>
+<view class="font">
+<view>当场开打</view>
+<view>可申请成为咕咚打手</view> 
+</view>
+<image class="icon" src="../../images/人-打架 (1白).png"></image>
+</swiper-item>
+</swiper>
+<view class="asset">左右滑动进行选择</view>
+
+<view style="display: flex;justify-content: center;align-items: center;margin-bottom: 50rpx;">
+<image src="../../images/前往 (1).png" style="width: 200rpx;height: 200rpx;" bindtap="changePage" ></image>
+</view>
+

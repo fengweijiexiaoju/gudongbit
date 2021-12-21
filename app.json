@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/indexOfguest/indexOfguest",
+    "pages/first/first",
+    "pages/indexOfbiter/indexOfbiter",
+    "pages/user/user"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#696969",
+    "navigationBarTitleText": "咕咚打人"
+    
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取您的经纬度"
+    }
+  },
+  "requiredBackgroundModes": [
+    "location"
+  ],
+  "sitemapLocation": "sitemap.json"
+}
