@@ -1,0 +1,8 @@
+<!--pages/test/test.wxml-->
+
+<cover-view>
+<scroll-view scroll-y="true">
+<view style="position: absolute;z-index: 1;">针对徐宏伟提出的赔偿申请，12月24日，吉林省洮南市检察院作出《刑事赔偿决定书》，认为该院为违法刑事扣押的赔偿义务机关，侵犯徐宏伟人身自由权的赔偿义务机关为洮南市人民法院。决定退还3000元取保候审保证金并支付利息、返还扣押的存单和现金共计1500元并支付利息，两项本息共计7104.71元。</view>
+</scroll-view>
+</cover-view>
+

@@ -1,32 +1,13 @@
-const app=getApp()
-// pages/first/first.js
+// pages/test/test.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    role: 0
-  },
-  changePage: function (e) {
-    console.log(this.data.role);
-    if (this.data.role == 0) {
-      wx.navigateTo({
-        url: "/pages/indexOfguest/indexOfguest",
-      })
-    } else {
-      wx.navigateTo({
-        url: "/pages/indexOfbiter/indexOfbiter",
-      })
-    }
 
   },
-  changeRole: function (e) {
-    // console.log(e.detail.current);
-    this.setData({
-      role: e.detail.current
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -38,7 +19,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    console.log("接收全局seecheck参数"+app.seecheck);
+
   },
 
   /**

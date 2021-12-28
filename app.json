@@ -3,7 +3,8 @@
     "pages/indexOfguest/indexOfguest",
     "pages/first/first",
     "pages/indexOfbiter/indexOfbiter",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/test/test"
   ],
   "window": {
     "navigationBarBackgroundColor": "#696969",

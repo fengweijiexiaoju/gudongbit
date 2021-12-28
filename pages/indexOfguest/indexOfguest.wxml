@@ -1,4 +1,4 @@
-<map name="" latitude="{{curlatitude}}" longitude="{{curlongitude}}" scale="{{controlSlider}}" markers="{{markers}}" bindtap="cleanScreen">
+<map name="" latitude="{{curlatitude}}" longitude="{{curlongitude}}" scale="{{controlSlider}}" markers="{{markers}}" bindtap="cleanScreen"  enable-zoom="false" >
 <view class="headTab">
 <view class="iconBox">
 <!-- <cover-image class="user" src="../../images/登录用户.png"></cover-image> -->
@@ -14,9 +14,9 @@
 <view>打架打不过很苦恼?来咕咚顺手打</view>
 </view>
 <view class="functionWindow">
-<view class="functionBar" scroll-x>
+<!-- <view class="functionBar" scroll-x>
 <view wx:for="{{funcArr}}">{{item.content}}</view>
-</view>
+</view> -->
 <view class="inputInfo">
 <cover-view wx:if="noWrite" >
 <input type="text" wx:if="{{hasSearch==false}}" placeholder="想要打谁" bindchange="changeinput"/>
@@ -27,14 +27,14 @@
 </cover-view> -->
 </view>
 <view class="btnclass" wx:if="{{hasSearch}}">
-<button bindtap="startSearching">呼叫打手</button>
+<button bindtap="startSearching" >呼叫打手</button>
 </view>
 <cover-view class="sliderClass" wx:if="{{hasSearch==false}}">
-<slider min="1" max="18" value="{{controlSlider}}" bindchange="changeControl"></slider>
+<slider min="1" max="18" value="{{controlSlider}}" bindchange="changeControl" ></slider>
 </cover-view>
 <!-- 编写订单页面 -->
-<view class="checkPage" wx:if="{{seeCheck}}">
-<view class="InfoOfDriver" wx:if="{{searching==false}}">
+<view class="checkPage {{searching==false?'hasSearch':''}}" wx:if="{{seeCheck}}" >
+<view wx:if="{{bitting}}" class="InfoOfDriver" wx:if="{{searching==false}}" >
 <!-- <view> -->
 <image src="{{bitter.cover}}"></image>
 <!-- </view> -->
@@ -43,8 +43,13 @@
 <view>联系方式:{{bitter.connect}}</view>
 </view>
 </view>
+<view wx:if="{{finish}}" style="margin-top: 30rpx;width: 80%; ">
+<button style="background-color: red;color: white;font-size: smaller;" bindtap="finish">
+订单已完成
+</button>
+</view>
 <view wx:if="{{searching==true}}">
-<image class="searching" src="../../images/加载中动图2.gif" style="width: 400rpx;height: 400rpx;"></image>
+<image class="searching" src="../../images/加载中动图.gif" style="width: 600rpx;height: 400rpx;"></image>
 </view>
 </view>
 </map>

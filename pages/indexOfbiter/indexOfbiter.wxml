@@ -1,2 +1,31 @@
-<!--pages/indexOfbiter/indexOfbiter.wxml-->
-<text>pages/indexOfbiter/indexOfbiter.wxml</text>
+<map name="" latitude="{{curlatitude}}" longitude="{{curlongitude}}" scale="{{controlSlider}}" markers="{{markers}}" enable-zoom="false" bindtap="click" bindmarkertap="clickmarker">
+<cover-view wx:if="{{seecheckOfbitter==true}}">
+<scroll-view  class="checkOfbitter" scroll-y="true" >
+<view  class="INfobox">
+<view style="margin-top: 50rpx;">姓名:{{waittingBitten.name}}</view>
+<picker range="{{nandu}}"  bindchange="pickerChange">
+<view style="margin: 10rpx 0;">请评估难度:{{nandu[index]}}</view>
+</picker>
+<view>
+<view>您的姓名:<input style="border: solid black 2rpx;" data-type="name" type="text" bindchange="changeInput"/></view>
+<view>您的联系方式: <input bindchange="changeInput"  data-type="connect" type="text" style="border: solid black 2rpx;" /> </view>
+</view>
+<view style="color: red;font-size: x-large;margin-top: 50rpx;">免责声明</view>
+<view>一切后果与本平台无关</view>
+<view>《刑法》第二百三十四条 故意伤害他人身体</view>
+<view>的处三年以下有期徒刑、拘役或者管制</view>
+<view>犯前款罪致人重伤的，处三年以上十年以下</view>
+<view>有期徒刑</view>
+<view style="display:flex;align-items:center;margin-top: 100rpx;"><checkbox></checkbox>我接收该协议</view>
+<view>预估到手报酬:{{13}}</view>
+<view style="display: flex;width: 100%;margin-top: 10rpx;">
+<button bindtap="acceptCheck">接打</button><button bindtap="cleanCheck">取消</button>
+</view>
+</view>
+</scroll-view>
+</cover-view>
+<cover-view class="submitBar" wx:if="{{hasAccepted&&finish==false}}"><button bindtap="submitBtn" class="submitBtn">交单</button></cover-view>
+<!-- <cover-view wx:if="{{finished}}">
+
+</cover-view> -->
+</map>

@@ -89,8 +89,11 @@ align-items: center;
 .btnclass button{
   width: 20%;font-size: 11pt; color: white;background-color: red;
 }
+.checkPage.hasSearch{
+  background-color: white;
+}
 .checkPage{
-  background-color: rgb(0, 0, 0);
+  background-color: #1A6AAF;
   position: absolute;
   margin: 0 54rpx;
   width: 650rpx;
